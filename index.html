@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/jquery-ui.min.css">
+		<link rel="stylesheet" href="css/jquery-ui.structure.min.css">		
+		<link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+		<link rel="stylesheet" href="css/estilos.css">
+		
+		<title>Examen DWEC 2EVA - Luis Miguel Barquillo Romero</title>
+	</head>
+	<body>
+		<div class="container">
+			<header class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<h1>TinderDAW !!!</h1>
+						<h5>Encuentra a cualquier compañero DAW en todo el mundo.</h5>
+				</div>				
+			</header>
+			<section class="row">
+				<div id="img-holder" class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+					
+				</div>
+				<div id="options" class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+					<div id="search">
+						<button id="config-btn" class="btn btn-outline-danger btn-block">Configuración</button>
+						<select id="gender">
+							<option value="none" selected>Sexo</option>
+							<option value="male">Hombre</option>
+							<option value="female">Mujer</option>
+						</select><br/>
+						<select id="age">
+							<option value="none" selected>Edad</option>
+							<option value="lt25">Menores de 25</option>
+							<option value="25to35">Entre 25 y 35</option>
+							<option value="35to45">Entre 35 y 45</option>
+							<option value="mt45">Mayores de 45</option>
+						</select><br/>
+						<select id="nationality">
+							<option value="none" selected>Nacionalidad</option>
+							<option value="ES">España</option>
+							<option value="FR">Francia</option>
+							<option value="US">Estados Unidos</option>
+							<option value="NO">Noruega</option>
+							<option value="NL">Holanda</option>
+						</select><br/>
+						<button id="filter" class="btn btn-secondary btn-block">Búsqueda</button>
+					</div>
+					<div id="config">
+						<button id="search-btn" class="btn btn-outline-success btn-block">Buscar</button>
+						<div id="accordion">
+							<h3>Número de imágenes</h3>
+							<div>
+								<h6 class="img-number">24 imágenes <input type="radio" name="num-img" value="24" /></h6>
+								<h6 class="img-number">30 imágenes <input type="radio" name="num-img" value="30" /></h6>
+								<h6 class="img-number">36 imágenes <input type="radio" name="num-img" value="36" checked/></h6>
+							</div>
+							<h3>Tamaño de imágenes</h3>
+							<div>
+								<h6 class="img-size">Grande <input type="radio" name="size-img" value="large" /></h6>
+								<h6 class="img-size">Mediano <input type="radio" name="size-img" value="medium" checked/></h6>
+								<h6 class="img-size">Pequeño <input type="radio" name="size-img" value="small" /></h6>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>		
+
+		<div id="modal-error" class="modal" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Error en la selección</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<p>Debes elegir al menos un criterio de búsqueda.</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Aceptar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- JavaScript -->
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/jquery.color-2.1.2.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
